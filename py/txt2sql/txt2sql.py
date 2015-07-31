@@ -1,8 +1,8 @@
 # Input file consist of lines. Values in every line are separated by whitespace.
-# Input file convert to sql-script. Every line of the input file is converted to insert command of output script.
 with open('input.txt') as in_f:
     lines = in_f.readlines()
 
+# Input file convert to sql-script. Every line of the input file is converted to insert command of output script.
 with open('output.sql','w') as out_f:
     for itr in lines:
         buf = itr.split()
